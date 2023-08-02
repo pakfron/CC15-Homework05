@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.card {
+    position: relative;
+    width: 200px;
+    height: 260px;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 10px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+}
+
+
+.card::before {
+    position: absolute;
+    content: "x";
+    color: rgb(148, 148, 148);
+    left: 5px;
+    font-size: 30px;
+    top: -8px;
+}
+
+.card::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    content: "9";
+    font-size: 20px;
+    right: -18px;
+    top: -20px;
+    width: 45px;
+    height: 45px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+
+
+img {
+
+    /* position: absolute; */
+    width: 199px;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    overflow: hidden;
+    /* right: px; */
+
+}
+
+h4 {
+    text-align: center;
+    margin-top: 15px;
+    /* position: absolute; */
+    /* margin-left: 50px;
+    margin-top: 216px; */
+    font-size: 20px;
+
+
+}
